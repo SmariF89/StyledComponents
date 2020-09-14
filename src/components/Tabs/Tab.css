@@ -1,0 +1,35 @@
+
+.tabcontent-horizontal {
+  padding: 6px 12px;
+   text-align: center;
+   float:left;
+   width: 200px;
+   height: 300px;
+   position: relative;
+   
+}
+
+.tabcontent-vertical {
+    padding: 22px 12px;
+    text-align: center;
+}
+
+.examine-horizontal {
+  border: 10px solid green;
+}
+
+.light {
+  color:SaddleBrown;
+}
+
+.light p {
+  color:SandyBrown;
+}
+
+.dark {
+  color: LightGray;
+}
+
+.dark p {
+  color: gray;
+}

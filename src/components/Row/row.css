@@ -1,0 +1,6 @@
+.colContainer {
+    width: 1260px;
+    height: 190px;
+    margin-top: 10px;
+    overflow: auto;
+}

@@ -1,0 +1,97 @@
+.progressbarWrapper {
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    width: 800px;
+    height: 30px;
+    margin: 10px;
+}
+
+.progressbar {
+    display: inline-block;
+    border-radius: 8px;
+    height: 30px;
+}
+
+@keyframes anim {
+    0% {background-position: 0px;}
+    100% {background-position: 200px;}
+}
+
+@keyframes animNoStr {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
+
+.progressbar.info {
+    background-color: blue;
+}
+
+.progressbar.info.striped {
+    background: repeating-linear-gradient(135deg, rgb(13, 18, 124) 3%, rgb(96, 173, 227) 6%, rgb(13, 18, 124) 6%);
+}
+
+.progressbar.info.animated {
+    background: linear-gradient(to right, rgb(124, 191, 233), rgb(13, 9, 203));
+    animation: animNoStr 5s 0s infinite;
+}
+
+.progressbar.info.striped.animated {
+    background: repeating-linear-gradient(135deg, rgb(13, 18, 124) 3%, rgb(96, 173, 227) 6%, rgb(13, 18, 124) 6%);
+    animation: anim 5s linear 0s infinite;
+}
+
+.progressbar.success {
+    background-color: lime;
+}
+
+.progressbar.success.striped {
+    background: repeating-linear-gradient(135deg, rgb(54, 122, 6) 3%, rgb(149, 233, 141) 6%, rgb(54, 122, 6) 6%);
+}
+
+.progressbar.success.animated {
+    animation: animNoStr 5s linear 0s infinite;
+    background: linear-gradient(to right, lime, green);
+}
+
+.progressbar.success.striped.animated {
+    background: repeating-linear-gradient(135deg, rgb(54, 122, 6) 3%, rgb(149, 233, 141) 6%, rgb(54, 122, 6) 6%);
+    animation: anim 5s linear 0s infinite;
+}
+
+.progressbar.warning {
+    background-color: orange;
+}
+
+.progressbar.warning.striped {
+    background: repeating-linear-gradient(135deg, orange 3%, yellow 6%, orange 6%);
+}
+
+.progressbar.warning.animated {
+    animation: animNoStr 5s linear 0s infinite;
+    background: linear-gradient(to right, orange, red);
+}
+
+.progressbar.warning.striped.animated {
+    background: repeating-linear-gradient(135deg, orange 3%, yellow 6%, orange 6%);
+    animation: anim 5s linear 0s infinite;
+}
+
+.progressbar.danger {
+    background-color: red;
+}
+
+.progressbar.danger.striped {
+    background: repeating-linear-gradient(135deg, rgb(163, 5, 5) 3%, rgb(230, 128, 110) 6%, rgb(163, 5, 5) 6%);
+}
+
+.progressbar.danger.animated {
+    animation: animNoStr 5s linear 0s infinite;
+    background: linear-gradient(to right, red, black, red);
+}
+
+.progressbar.danger.striped.animated {
+    background: repeating-linear-gradient(135deg, rgb(163, 5, 5) 3%, rgb(230, 128, 110) 6%, rgb(163, 5, 5) 6%);
+    animation: anim 5s linear 0s infinite;
+}

@@ -1,0 +1,53 @@
+.gridItemName {
+    grid-area: name;
+    font-weight: bold;
+}
+
+.gridItemEmail {
+    grid-area: email;
+    color: black;
+    text-decoration: none;
+}
+
+.gridItemTel {
+    grid-area: tel;
+}
+
+.gridItemImg {
+    grid-area: img;
+    display: block;
+    border: 1px solid #ddd;
+    margin-right: -65px;
+    margin-top: 3px;
+    border-radius: 50%;
+    padding: 6px;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+}
+
+.nameCard {
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: grid;
+    grid-template-areas:
+    'name img'
+    'email img'
+    'tel img';
+    grid-gap: 10px;
+    background-color: rgb(232, 232, 232);
+    padding: 10px;
+    width: 460px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.nameCard > div {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.infoStyle {
+    display: block;
+    padding: 8px;
+}

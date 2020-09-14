@@ -1,0 +1,54 @@
+.carousel {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-columns: auto;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(213, 212, 211);
+  grid-template-areas:
+  'img img img'
+  'img img img'
+  'img img img'
+  'prev . next';
+  margin: 12px;
+  background-color: grey;
+}
+
+.carousal-small {
+  width: 200px;
+  height: 200px;
+}
+
+.carousal-medium {
+  width: 400px;
+  height: 400px;
+}
+
+.carousal-large {
+  width: 800px;
+  height: 800px;
+}
+
+.gridItemImg {
+    grid-area: img;
+}
+
+.gridItemPrev {
+    grid-area: prev;
+    height: 40px;
+    font-size: 35px;
+}
+
+.gridItemNext {
+    grid-area: next;
+    height: 40px;
+    font-size: 35px;
+}
+
+.carousel > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+
+}

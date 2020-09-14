@@ -1,0 +1,5 @@
+.colFrame {
+    display: inline-block;
+    height: 50px;
+    border: 2px solid black;
+}

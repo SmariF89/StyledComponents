@@ -1,0 +1,24 @@
+.cartoonNetworkSpinner {
+    display: inline-block;
+    margin: 10px;
+    margin-right: 20px;
+    background-position: 50%;
+    background-color: green;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+}
+
+.spinThat{
+    animation-name: cnSpinner;
+    animation-duration: 2s;
+    animation-iteration-count: linear infinite;
+}
+
+@keyframes cnSpinner {
+    100% { transform:rotate(360deg) }
+}
